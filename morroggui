@@ -1,0 +1,170 @@
+--Made by morrog
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local ope = Instance.new("Frame")
+local OPEN = Instance.new("TextButton")
+local main = Instance.new("Frame")
+local Getdiablock = Instance.new("TextButton")
+local Getallitems = Instance.new("TextButton")
+local WalkSpeedlow = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local WalkSpeedhigh = Instance.new("TextButton")
+
+
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ope.Name = "ope"
+ope.Parent = ScreenGui
+ope.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ope.BackgroundTransparency = 1.000
+ope.Position = UDim2.new(0.0299586784, 0, 0.728601277, 0)
+ope.Size = UDim2.new(0, 144, 0, 43)
+
+OPEN.Name = "OPEN"
+OPEN.Parent = ope
+OPEN.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+OPEN.Size = UDim2.new(0, 144, 0, 43)
+OPEN.Font = Enum.Font.SourceSans
+OPEN.Text = "OPEN"
+OPEN.TextColor3 = Color3.fromRGB(0, 0, 0)
+OPEN.TextScaled = true
+OPEN.TextSize = 1.000
+OPEN.TextWrapped = true
+OPEN.Active = true
+OPEN.Draggable = true
+OPEN.MouseButton1Down:connect(function()
+	main.Visible = true
+	OPEN.Visible = false
+end)
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
+main.Position = UDim2.new(0.224173561, 0, 0.177453026, 0)
+main.Size = UDim2.new(0, 313, 0, 205)
+main.Visible = false
+main.Active = true
+main.Draggable = true
+
+
+Getdiablock.Name = "Getdiablock"
+Getdiablock.Parent = main
+Getdiablock.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+Getdiablock.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Getdiablock.Position = UDim2.new(0, 0, 0.36213991, 0)
+Getdiablock.Size = UDim2.new(0, 130, 0, 55)
+Getdiablock.Font = Enum.Font.SourceSans
+Getdiablock.Text = "Diamond Block"
+Getdiablock.TextColor3 = Color3.fromRGB(0, 0, 0)
+Getdiablock.TextSize = 20.000
+Getdiablock.MouseButton1Down:connect(function()
+	game:GetService'ReplicatedStorage'.SpawnDiamondBlock:FireServer()
+end)
+
+Getallitems.Name = "Getallitems"
+Getallitems.Parent = main
+Getallitems.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+Getallitems.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Getallitems.Position = UDim2.new(0.583392143, 0, 0.357562989, 0)
+Getallitems.Size = UDim2.new(0, 130, 0, 55)
+Getallitems.Font = Enum.Font.SourceSans
+Getallitems.Text = "Get 100+ items"
+Getallitems.TextColor3 = Color3.fromRGB(0, 0, 0)
+Getallitems.TextSize = 20.000
+Getallitems.TextWrapped = true
+Getallitems.MouseButton1Down:connect(function()
+	game:GetService'ReplicatedStorage'.SpawnDiamondBlock:FireServer()
+	wait(0,5)
+	game:GetService'ReplicatedStorage'.SpawnDiamondBlock:FireServer()
+	wait(0,5)
+	game:GetService'ReplicatedStorage'.SpawnDiamondBlock:FireServer()
+	wait(0,5)
+	game:GetService'ReplicatedStorage'.SpawnDiamondBlock:FireServer()
+	wait(0,5)
+	game:GetService'ReplicatedStorage'.SpawnDiamondBlock:FireServer()
+	wait(0,5)
+	game:GetService'ReplicatedStorage'.SpawnDiamondBlock:FireServer()
+	wait(0,5)
+	game:GetService'ReplicatedStorage'.SpawnDiamondBlock:FireServer()
+	wait(0,5)
+	game:GetService'ReplicatedStorage'.SpawnDiamondBlock:FireServer()
+	wait(0,5)
+	game:GetService'ReplicatedStorage'.SpawnDiamondBlock:FireServer()
+	wait(0,5)
+	game:GetService'ReplicatedStorage'.SpawnDiamondBlock:FireServer()
+	wait(0,5)
+	game:GetService'ReplicatedStorage'.SpawnDiamondBlock:FireServer()
+	wait(0,5)
+	game:GetService'ReplicatedStorage'.SpawnDiamondBlock:FireServer()
+	wait(0,5)
+	game:GetService'ReplicatedStorage'.SpawnDiamondBlock:FireServer()
+	wait(0,5)
+	game:GetService'ReplicatedStorage'.SpawnDiamondBlock:FireServer()
+	wait(0,5)
+	game:GetService'ReplicatedStorage'.SpawnDiamondBlock:FireServer()
+	wait(0,5)
+	game:GetService'ReplicatedStorage'.SpawnDiamondBlock:FireServer()
+	wait(0,5);
+
+end)
+
+
+
+WalkSpeedlow.Name = "WalkSpeedlow"
+WalkSpeedlow.Parent = main
+WalkSpeedlow.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+WalkSpeedlow.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WalkSpeedlow.Position = UDim2.new(0.580197275, 0, 0.728688359, 0)
+WalkSpeedlow.Size = UDim2.new(0, 130, 0, 55)
+WalkSpeedlow.Font = Enum.Font.SourceSans
+WalkSpeedlow.Text = "WalkSpeed OFF"
+WalkSpeedlow.TextColor3 = Color3.fromRGB(0, 0, 0)
+WalkSpeedlow.TextSize = 20.000
+WalkSpeedlow.MouseButton1Down:connect(function()
+game:GetService'Players'.mew_Sp.Character.Humanoid.WalkSpeed = 16
+end)
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel.Size = UDim2.new(0, 313, 0, 47)
+TextLabel.Font = Enum.Font.Nunito
+TextLabel.Text = "MORROG GUI"
+TextLabel.TextColor3 = Color3.fromRGB(0, 255, 0)
+TextLabel.TextSize = 30.000
+TextLabel.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = main
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Close.Position = UDim2.new(0.830670953, 0, 0, 0)
+Close.Size = UDim2.new(0, 53, 0, 47)
+Close.Font = Enum.Font.Nunito
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+Close.MouseButton1Down:connect(function()
+	main.Visible = false
+	OPEN.Visible = true
+end)
+
+WalkSpeedhigh.Name = "WalkSpeedhigh"
+WalkSpeedhigh.Parent = main
+WalkSpeedhigh.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+WalkSpeedhigh.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WalkSpeedhigh.Position = UDim2.new(0, 0, 0.728688359, 0)
+WalkSpeedhigh.Size = UDim2.new(0, 130, 0, 55)
+WalkSpeedhigh.Font = Enum.Font.SourceSans
+WalkSpeedhigh.Text = "WalkSpeed ON"
+WalkSpeedhigh.TextColor3 = Color3.fromRGB(0, 0, 0)
+WalkSpeedhigh.TextSize = 20.000
+WalkSpeedhigh.MouseButton1Down:connect(function()
+	game:GetService'Players'.mew_Sp.Character.Humanoid.WalkSpeed = 70
+end)
